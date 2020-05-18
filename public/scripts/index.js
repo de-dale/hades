@@ -14,7 +14,7 @@ navigator.getUserMedia(
 
 const { RTCPeerConnection, RTCSessionDescription } = window;
 
-const socket = io.connect("localhost:5000");
+const socket = io.connect("de-dale.hd.free.fr:33000");
 const peerConnection = new RTCPeerConnection();
 
 peerConnection.ontrack = function({ streams: [stream] }) {
